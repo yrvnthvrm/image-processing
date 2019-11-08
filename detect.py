@@ -1,3 +1,4 @@
+import sys
 import cv2
 
 class DetectTable(object):
@@ -35,7 +36,8 @@ class DetectTable(object):
 
 
 if __name__=='__main__':
-    image = cv2.imread('input-image.jpg')
+    path = sys.argv[1:][0]
+    image = cv2.imread(path)
     cv2.imshow("img", image)
     mask,joint = DetectTable(image).run()
     cv2.waitKey()
