@@ -3,4 +3,4 @@
 # pip install requirements.txt
 
 ``` RUN ```
-# python detect.py
+# python detect.py <filename>
